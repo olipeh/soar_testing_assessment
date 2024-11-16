@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-11-16T11:25:54.109320" rpa="false" schemaversion="5">
+<suite id="s1" name="JS RegistrationCheck" source="C:\Users\alifi\PycharmProjects\pythonProject\JS_RegistrationCheck.robot">
+<test id="s1-t1" name="User Registration and Login with Validation Checks" line="25">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-11-16T11:25:54.312633" level="INFO">Opening browser 'chrome' to base url 'https://juice-shop.herokuapp.com/#/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-16T11:25:54.312334" elapsed="5.598881"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-16T11:25:59.911672" elapsed="0.060320"/>
+</kw>
+<kw name="Go to Registration Page and Check Validation">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-16T11:25:59.973257" level="INFO">Clicking element 'css=#navbarAccount'.</msg>
+<msg time="2024-11-16T11:26:01.410236" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-33.png"&gt;&lt;img src="selenium-screenshot-33.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-11-16T11:26:01.410534" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button _ngcontent-kxk-c124="" mat-button="" fxhide.lt-md="" fxshow="" aria-label="Show/hide account menu" id="navbarAccount" class="mat-focus-indicator mat-menu-trigger buttons mat-button mat-button-base" style="vertical-align: middle; height: 48px;" aria-haspopup="menu"&gt;...&lt;/button&gt; is not clickable at point (1296, 32). Other element would receive the click: &lt;div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"&gt;&lt;/div&gt;
+  (Session info: chrome=130.0.6723.117)
+Stacktrace:
+	GetHandleVerifier [0x00007FF618B938A5+3004357]
+	(No symbol) [0x00007FF618829970]
+	(No symbol) [0x00007FF6186D582A]
+	(No symbol) [0x00007FF61872D80E]
+	(No symbol) [0x00007FF61872B2AC]
+	(No symbol) [0x00007FF618728778]
+	(No symbol) [0x00007FF61872798C]
+	(No symbol) [0x00007FF61871996E]
+	(No symbol) [0x00007FF61874BBDA]
+	(No symbol) [0x00007FF6187192A6]
+	(No symbol) [0x00007FF61874BDF0]
+	(No symbol) [0x00007FF61876BA4C]
+	(No symbol) [0x00007FF61874B983]
+	(No symbol) [0x00007FF618717628]
+	(No symbol) [0x00007FF618718791]
+	GetHandleVerifier [0x00007FF618BBA00D+3161901]
+	GetHandleVerifier [0x00007FF618C0E060+3506048]
+	GetHandleVerifier [0x00007FF618C0400D+3465005]
+	GetHandleVerifier [0x00007FF618980EEB+830987]
+	(No symbol) [0x00007FF61883467F]
+	(No symbol) [0x00007FF6188309D4]
+	(No symbol) [0x00007FF618830B6D]
+	(No symbol) [0x00007FF618820149]
+	BaseThreadInitThunk [0x00007FF8B9B7259D+29]
+	RtlUserThreadStart [0x00007FF8BBE0AF38+40]
+</msg>
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-11-16T11:25:59.972835" elapsed="1.440904">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button _ngcontent-kxk-c124="" mat-button="" fxhide.lt-md="" fxshow="" aria-label="Show/hide account menu" id="navbarAccount" class="mat-focus-indicator mat-menu-trigger buttons mat-button mat-button-base" style="vertical-align: middle; height: 48px;" aria-haspopup="menu"&gt;...&lt;/button&gt; is not clickable at point (1296, 32). Other element would receive the click: &lt;div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"&gt;&lt;/div&gt;
+  (Session info: chrome=130.0.6723.117)
+Stacktrace:
+	GetHandleVerifier [0x00007FF618B938A5+3004357]
+	(No symbol) [0x00007FF618829970]
+	(No symbol) [0x00007FF6186D582A]
+	(No symbol) [0x00007FF61872D80E]
+	(No symbol) [0x00007FF61872B2AC]
+	(No symbol) [0x00007FF618728778]
+	(No symbol) [0x00007FF61872798C]
+	(No symbol) [0x00007FF61871996E]
+	(No symbol) [0x00007FF61874BBDA]
+	(No symbol) [0x00007FF6187192A6]
+	(No symbol) [0x00007FF61874BDF0]
+	(No symbol) [0x00007FF61876BA4C]
+	(No symbol) [0x00007FF61874B983]
+	(No symbol) [0x00007FF618717628]
+	(No symbol) [0x00007FF618718791]
+	GetHandleVerifier [0x00007FF618BBA00D+3161901]
+	GetHandleVerifier [0x00007FF618C0E060+3506048]
+	GetHandleVerifier [0x00007FF618C0400D+3465005]
+	GetHandleVerifier [0x00007FF618980EEB+830987]
+	(No symbol) [0x00007FF61883467F]
+	(No symbol) [0x00007FF6188309D4]
+	(No symbol) [0x00007FF618830B6D]
+	(No symbol) [0x00007FF618820149]
+	BaseThreadInitThunk [0x00007FF8B9B7259D+29]
+	RtlUserThreadStart [0x00007FF8BBE0AF38+40]
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${LOGIN_NAV_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-11-16T11:26:01.413994" elapsed="0.000095"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${NEW_CUSTOMER_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-11-16T11:26:01.414219" elapsed="0.000069"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${EMAIL_INPUT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-11-16T11:26:01.414394" elapsed="0.000059"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${PASSWORD_INPUT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-11-16T11:26:01.414553" elapsed="0.000058"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${REPEAT_PASSWORD_INPUT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-11-16T11:26:01.414705" elapsed="0.000065"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${SECURITY_ANSWER_INPUT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-11-16T11:26:01.414864" elapsed="0.000056"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<arg>xpath=//mat-error[contains(text(), "Email is required")]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" start="2024-11-16T11:26:01.415011" elapsed="0.000492"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<arg>xpath=//mat-error[contains(text(), "Password is required")]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" start="2024-11-16T11:26:01.415605" elapsed="0.000061"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<arg>xpath=//mat-error[contains(text(), "Please repeat your password")]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" start="2024-11-16T11:26:01.415759" elapsed="0.000057"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<arg>xpath=//mat-error[contains(text(), "Security answer is required")]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" start="2024-11-16T11:26:01.415909" elapsed="0.000056"/>
+</kw>
+<status status="FAIL" start="2024-11-16T11:25:59.972454" elapsed="1.443663">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button _ngcontent-kxk-c124="" mat-button="" fxhide.lt-md="" fxshow="" aria-label="Show/hide account menu" id="navbarAccount" class="mat-focus-indicator mat-menu-trigger buttons mat-button mat-button-base" style="vertical-align: middle; height: 48px;" aria-haspopup="menu"&gt;...&lt;/button&gt; is not clickable at point (1296, 32). Other element would receive the click: &lt;div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"&gt;&lt;/div&gt;
+  (Session info: chrome=130.0.6723.117)
+Stacktrace:
+	GetHandleVerifier [0x00007FF618B938A5+3004357]
+	(No symbol) [0x00007FF618829970]
+	(No symbol) [0x00007FF6186D582A]
+	(No symbol) [0x00007FF61872D80E]
+	(No symbol) [0x00007FF61872B2AC]
+	(No symbol) [0x00007FF618728778]
+	(No symbol) [0x00007FF61872798C]
+	(No symbol) [0x00007FF61871996E]
+	(No symbol) [0x00007FF61874BBDA]
+	(No symbol) [0x00007FF6187192A6]
+	(No symbol) [0x00007FF61874BDF0]
+	(No symbol) [0x00007FF61876BA4C]
+	(No symbol) [0x00007FF61874B983]
+	(No symbol) [0x00007FF618717628]
+	(No symbol) [0x00007FF618718791]
+	GetHandleVerifier [0x00007FF618BBA00D+3161901]
+	GetHandleVerifier [0x00007FF618C0E060+3506048]
+	GetHandleVerifier [0x00007FF618C0400D+3465005]
+	GetHandleVerifier [0x00007FF618980EEB+830987]
+	(No symbol) [0x00007FF61883467F]
+	(No symbol) [0x00007FF6188309D4]
+	(No symbol) [0x00007FF618830B6D]
+	(No symbol) [0x00007FF618820149]
+	BaseThreadInitThunk [0x00007FF8B9B7259D+29]
+	RtlUserThreadStart [0x00007FF8BBE0AF38+40]
+</status>
+</kw>
+<kw name="Fill Registration Form with Self Generated Information">
+<status status="NOT RUN" start="2024-11-16T11:26:01.416521" elapsed="0.000084"/>
+</kw>
+<kw name="Show Password Advice and Submit Form">
+<status status="NOT RUN" start="2024-11-16T11:26:01.416745" elapsed="0.000071"/>
+</kw>
+<kw name="Assert Successful Registration and Login">
+<status status="NOT RUN" start="2024-11-16T11:26:01.416922" elapsed="0.000058"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-16T11:26:01.417194" elapsed="2.172053"/>
+</kw>
+<status status="FAIL" start="2024-11-16T11:25:54.311359" elapsed="9.278103">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button _ngcontent-kxk-c124="" mat-button="" fxhide.lt-md="" fxshow="" aria-label="Show/hide account menu" id="navbarAccount" class="mat-focus-indicator mat-menu-trigger buttons mat-button mat-button-base" style="vertical-align: middle; height: 48px;" aria-haspopup="menu"&gt;...&lt;/button&gt; is not clickable at point (1296, 32). Other element would receive the click: &lt;div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"&gt;&lt;/div&gt;
+  (Session info: chrome=130.0.6723.117)
+Stacktrace:
+	GetHandleVerifier [0x00007FF618B938A5+3004357]
+	(No symbol) [0x00007FF618829970]
+	(No symbol) [0x00007FF6186D582A]
+	(No symbol) [0x00007FF61872D80E]
+	(No symbol) [0x00007FF61872B2AC]
+	(No symbol) [0x00007FF618728778]
+	(No symbol) [0x00007FF61872798C]
+	(No symbol) [0x00007FF61871996E]
+	(No symbol) [0x00007FF61874BBDA]
+	(No symbol) [0x00007FF6187192A6]
+	(No symbol) [0x00007FF61874BDF0]
+	(No symbol) [0x00007FF61876BA4C]
+	(No symbol) [0x00007FF61874B983]
+	(No symbol) [0x00007FF618717628]
+	(No symbol) [0x00007FF618718791]
+	GetHandleVerifier [0x00007FF618BBA00D+3161901]
+	GetHandleVerifier [0x00007FF618C0E060+3506048]
+	GetHandleVerifier [0x00007FF618C0400D+3465005]
+	GetHandleVerifier [0x00007FF618980EEB+830987]
+	(No symbol) [0x00007FF61883467F]
+	(No symbol) [0x00007FF6188309D4]
+	(No symbol) [0x00007FF618830B6D]
+	(No symbol) [0x00007FF618820149]
+	BaseThreadInitThunk [0x00007FF8B9B7259D+29]
+	RtlUserThreadStart [0x00007FF8BBE0AF38+40]
+</status>
+</test>
+<status status="FAIL" start="2024-11-16T11:25:54.122342" elapsed="9.467859"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="JS RegistrationCheck">JS RegistrationCheck</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-11-16T11:25:54.305592" level="ERROR">Error in file 'C:\Users\alifi\PycharmProjects\pythonProject\JS_RegistrationCheck.robot' on line 3: Importing library 'FakerLibrary' failed: ModuleNotFoundError: No module named 'FakerLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\alifi\AppData\Roaming\JetBrains\PyCharm2024.2\plugins\robotframework-intellij\lib\robotframework_debug_adapter
+  C:\Users\alifi\PycharmProjects\pythonProject
+  C:\Users\alifi\AppData\Roaming\JetBrains\PyCharm2024.2\plugins\robotframework-intellij\lib
+  C:\Users\alifi\AppData\Roaming\JetBrains\PyCharm2024.2\plugins\robotframework-intellij\lib\robotframework_ls\vendored
+  C:\Users\alifi\PycharmProjects\pythonProject\.venv\Scripts\python313.zip
+  C:\Users\alifi\AppData\Local\Programs\Python\Python313\DLLs
+  C:\Users\alifi\AppData\Local\Programs\Python\Python313\Lib
+  C:\Users\alifi\AppData\Local\Programs\Python\Python313
+  C:\Users\alifi\PycharmProjects\pythonProject\.venv
+  C:\Users\alifi\PycharmProjects\pythonProject\.venv\Lib\site-packages</msg>
+</errors>
+</robot>
