@@ -1,8 +1,10 @@
 # soar_testing_assessment
 1. Functional Test
-   
+   Bugs are recorded in https://github.com/olipeh/soar_testing_assessment/tree/main/Functional%20Test
+   Done : OWASP Juice Shop testing (shallow exploratory + basic security testing(sql injection, xss))
+   Not done : WikiApp
 
-2. Web automation for OWASP JUICE SHOP 
+3. Web automation for OWASP JUICE SHOP 
 https://github.com/olipeh/soar_testing_assessment/tree/main/pythonProject
 
 Automation using Robot Framework
