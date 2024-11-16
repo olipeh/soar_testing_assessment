@@ -13,8 +13,12 @@ Not Done : Task 4 and Mobile Automation
 
 
 3. Logical and security testing
+   Done : load test registration, stress test login
+   Not Done : BDD performance testing and using apptim
 
 
-4. Test Management
+
+5. Test Management
 Test cases are designed with assigned priority which has been analyzed and assessed by potential risk. 
 Risk assessment matrix is calculated by probability and severity. 
+
